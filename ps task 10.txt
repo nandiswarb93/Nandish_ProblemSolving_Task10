@@ -1,0 +1,82 @@
+
+/* ascending order */
+
+a = prompt("enter a number to check the numbers in ascending order or not: ").split(" ").map(Number)
+asc=true
+for(i=0;i<a.length;i++)
+{
+    b = a[i]- a[i+1]
+    if(b>0)
+    {
+        asc=false
+        break
+    }
+}
+if(asc)
+{
+    console.log("the given array is in ascending order: "+ a)
+}
+else
+{
+    console.log("the given array is not in ascending order: "+ a)
+}
+
+/*descending order*/
+a = prompt("enter a number to check the numbers in descending order or not: ").split(" ").map(Number)
+asc=true
+for(i=0;i<a.length;i++)
+{
+    b = a[i]- a[i+1]
+    if(b<0)
+    {
+        asc=false
+        break
+    }
+}
+if(asc)
+{
+    console.log("the given array is in descending order: "+ a)
+}
+else
+{
+    console.log("the given array is not in descending order: "+ a)
+}
+
+
+
+o/p:
+
+enter a number to check the numbers in ascending order or not: 24,67,87,100,101
+the given array is in ascending order: NaN
+enter a number to check the numbers in descending order or not: 40 18 3 4
+the given array is not in descending order: 40,18,3,4
+
+
+//unsorted array:
+
+
+a =[4,7,9,1]
+asc=false
+desc=false
+for(i=0;i<a.length;i++)
+{
+    b = a[i]- a[i+1]
+    if(b>0 )
+    {
+        asc=true
+    }
+    if(b<0)
+    {
+       desc=true
+    }
+}
+if(asc && desc)
+{
+    console.log("the given array unsorted order: "+ a)
+}
+else 
+{
+    console.log("the given array's in asc or desc : "+a)
+}
+
+
